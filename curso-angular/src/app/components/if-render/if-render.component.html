@@ -1,0 +1,11 @@
+<div class="class">
+    <div *ngIf="canShow">
+        Se está vendo isso, você é um corno
+    </div>
+    <h2 *ngIf="name === 'Lusca'; else nameNotFound"> {{ name }} você é o cara mais lindo do mundo</h2>
+    <ng-template #nameNotFound>
+        <div>
+            <h2>{{ name }} você não é o cara mais lindo desse mundo</h2>
+        </div>
+    </ng-template>
+</div>
