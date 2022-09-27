@@ -1,0 +1,10 @@
+<div class="class">
+    <h2>Aviões</h2>
+        <ul>
+            <li *ngFor="let airplane of airplanes">
+                Avião: {{ airplane.model }}, Fabricante: {{ airplane.manu }}
+                <button (click)="showAir(airplane)">Idade</button>
+            </li>
+        </ul>
+        <h3>{{airplaneDetails}}</h3>
+</div>
